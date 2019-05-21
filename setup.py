@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 requirements = [
-    'ballet>=0.5.1',
-    'Click>=6.0',
+    "ballet @ git+https://git@github.com/HDI-Project/ballet@master",
+    "Click>=6.0",
 ]
 
 setup(
@@ -13,6 +13,7 @@ setup(
     },
     install_requires=requirements,
     name='ballet_ames_sim_lower_threshold',
-    packages=find_packages(include=['ballet_ames_sim_lower_threshold', 'ballet_ames_sim_lower_threshold.*']),
+    packages=find_packages(
+        include=['ballet_ames_sim_lower_threshold', 'ballet_ames_sim_lower_threshold.*']),
     url='https://github.com/kelvin-lu/ballet_ames_sim_lower_threshold',
 )
